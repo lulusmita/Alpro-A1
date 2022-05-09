@@ -20,14 +20,21 @@ void selectionSort(int array[],int n){
 }
 int main(){ /* Program Utama */
 /* Kamus */
-   int i,n,array[]={29,80,14,37,141,13,5,7,40,35};
+   int i,N,*array;
 /* Algoritma */
    printf("=========================================================================\n");
    printf("                        Selection Sort Program                           \n");
    printf("=========================================================================\n");
-   n=sizeof(array)/sizeof(array[0]);
-   selectionSort(array,n);
-   for(i=0;i<n;i++){
+   printf("Masukkan panjang array:");scanf("%d", &N);
+   array = (int*) malloc(N * sizeof(int));
+   printf("Masukkan elemen-elemen array:\n");
+    for(i=0;i<N;i++){
+        scanf("%d", &array[i]);
+    }
+   selectionSort(array,N);
+   printf("=========================================================================\n");
+   printf("Array setelah disorting secara descending dengan selection sort:\n");
+   for(i=0;i<N;i++){
     printf("%d ",array[i]);
    }
    printf("\n=========================================================================\n");
