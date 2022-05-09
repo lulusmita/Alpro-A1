@@ -1,5 +1,5 @@
 /* Nama file     :CountingSort.c */
-/* Deskripsi     :Menyortir beberapa inputan bilangan dari urutan terkecil ke terbesar dengan CountingSort */
+/* Deskripsi     :Menyortir beberapa inputan bilangan dari urutan terbesar ke terkecil atau descending dengan CountingSort */
 /* Pembuat       :Lulus Dwiyan Mita-24060121120029 */
 /* Tgl Pembuatan :Senin,2 Mei 2022/15.25 WIB */
 #include<stdio.h>
